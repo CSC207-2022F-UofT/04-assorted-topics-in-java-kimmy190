@@ -33,8 +33,9 @@ class DrivableMap {
         if (!drivable_map.containsKey(id)) {
             // above condition simplified "drivable_map.containsKey(ID) != true" 
             drivable_map.put(id, obj);
+            return true;
         }
-        return drivable_map.containsKey(id);
+        return false;
     }
 
 
